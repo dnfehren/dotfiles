@@ -1,0 +1,6 @@
+Host how_you_remember_it
+	HostName host_ip_or_url
+	User user_name
+	Port 22
+	IdentityFile if_you_need_rsa_key
+	ServerAliveInterval 120

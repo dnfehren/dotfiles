@@ -1,0 +1,61 @@
+call pathogen#infect()
+
+
+" a lot of this is from http://sontek.net/turning-vim-into-a-modern-python-ide
+
+
+" General Settings
+set nocompatible
+set nobackup
+set nowritebackup
+set noswapfile
+
+set mouse=a " Enable the mouse
+set ttymouse=xterm2
+behave xterm
+set selectmode=mouse 
+
+" Size
+"set lines=50
+"set columns=80
+
+" GUI settings
+set guioptions-=L
+set guioptions-=T
+
+" Visuals
+set t_Co=256
+colors zenburn
+set guifont=Terminus
+
+" Editing
+fixdel
+set ruler
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+set number
+set showmatch
+set foldmethod=indent
+set foldlevel=99
+
+" Syntax Checking
+syntax on
+set syntax=automatic
+filetype on
+filetype plugin on
+filetype plugin indent on
+
+" Plugin Settings 
+
+" python completiong
+au FileType python set omnifunc=pythoncomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
+
+" nerdtree
+map <leader>n :NERDTreeToggle<CR>
+
+" ack
+nmap <leader>a <Esc>:Ack!
