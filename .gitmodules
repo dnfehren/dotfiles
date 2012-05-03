@@ -13,3 +13,6 @@
 [submodule "vim_files/vim/bundle/conque"]
 	path = vim_files/vim/bundle/conque
 	url = https://github.com/rygwdn/vim-conque
+[submodule "vim_files/vim/bundle/zenburn"]
+	path = vim_files/vim/bundle/zenburn
+	url = git://github.com/vim-scripts/Zenburn.git
