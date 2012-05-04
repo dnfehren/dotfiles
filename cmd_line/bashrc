@@ -126,3 +126,4 @@ function extract()      # Handy Extract Program.
      fi
 }
 
+[ -n "$TMUX" ] && export TERM=screen-256color
