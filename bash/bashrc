@@ -131,6 +131,14 @@ function extract()      # Handy Extract Program.
 export WORKON_HOME=/home/dnfehren/.pyenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
+export XDG_CURRENT_DESKTOP='openbox'
+
+export NEXUS_SETTINGS=/home/dnfehren/eehome/realtime/nexus/settings/local/nexus.yaml
+export NEXUS_APP_SETTINGS=/home/dnfehren/eehome/realtime/nexus/settings/local/nexus_app.yaml
+export BENCH_CONFIG=/home/dnfehren/eehome/benchmarking/chicago/citywide/settings/bench_config.yaml
+export PHONELOG_CONFIG=/home/dnfehren/eehome/phonelog/settings/local.yaml
+export PROSPECTOR_CONFIG=/home/dnfehren/eehome/realtime/prospects_db/settings/prospector/v2/local.cfg
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
